@@ -64,11 +64,9 @@ end
 def can_be_found_updated_and_saved
   # Updtate the title "Awesome Flick" to "Even Awesomer Flick", save it, then return it
   movie = Movie.find_by(title: "Awesome Flick")
+  #binding.pry
   movie.update(title: "Even Awesomer Flick")
   movie.save
-  #binding.pry
-  #Movie.update(id: 1, title: "Even Awesomer Flick")
-  #Movie.save
 end
 
 def can_update_using_update_method
